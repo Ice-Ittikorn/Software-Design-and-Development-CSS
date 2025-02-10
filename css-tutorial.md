@@ -289,7 +289,8 @@ nav > ul > li {
     border-radius: 3px;
 }
 ```
-![Uploading ภาพถ่ายหน้าจอ 2568-02-10 เวลา 23.53.48.png…]()
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-10 เวลา 23 56 49" src="https://github.com/user-attachments/assets/83ed429b-8f09-4c59-9ed3-895d1b8529b8" />
+
 
 
 
