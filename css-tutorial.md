@@ -250,7 +250,7 @@ div > p {
     </nav>
 </body>
 </html>
-```\
+```
 ``` css
 nav {
     background-color: #00b94d;
@@ -288,7 +288,7 @@ nav > ul > li {
     background-color: #007bff;
     border-radius: 3px;
 }
-```\
+```
 ![Uploading ภาพถ่ายหน้าจอ 2568-02-10 เวลา 23.53.48.png…]()
 
 
