@@ -395,9 +395,143 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheet/lab3.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image1"></div>
+        <div class="product-info">
+            <h2 class="product-title">ขนมครก</h2>
+            <p class="product-price">฿50</p>
+            <p class="product-description">
+                ขนมครกกรอบนอกนุ่มใน หอมหวาน อร่อยจนหยุดไม่ได้!
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image2"></div>
+        <div class="product-info">
+            <h2 class="product-title">ขนมชั้น</h2>
+            <p class="product-price">฿99</p>
+            <p class="product-description">
+                ขนมชั้นหอมหวาน เนื้อเหนียวนุ่ม ละลายในปาก อร่อยทุกชั้น! 
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image3"></div>
+        <div class="product-info">
+            <h2 class="product-title">ข้าวเหนี่ยวมะม่วง</h2>
+            <p class="product-price">฿199</p>
+            <p class="product-description">
+                ข้าวเหนียวมะม่วง หอมหวานจากมะม่วงสุกและข้าวเหนียวมูน นุ่มละมุนลิ้น อร่อยจนต้องขอเพิ่ม! 
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image4"></div>
+        <div class="product-info">
+            <h2 class="product-title">ขนมถ้วยฟู</h2>
+            <p class="product-price">฿89</p>
+            <p class="product-description">
+                ขนมถ้วยฟู เนื้อนุ่มฟู หอมหวานละมุน อร่อยทุกคำ!
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```css
+.product-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.product-image1 {
+    width: 100%;
+    height: 200px;
+    background-image: url('/images/pro1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image2 {
+    width: 100%;
+    height: 200px;
+    background-image: url('/images/pro2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image3 {
+    width: 100%;
+    height: 200px;
+    background-image: url('/images/pro3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image4 {
+    width: 100%;
+    height: 200px;
+    background-image: url('/images/pro4.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #0056b3, #003980);
+}
+
+```
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-11 เวลา 00 06 36" src="https://github.com/user-attachments/assets/88387762-40d5-4645-a4d3-c3be6a157e26" />
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
