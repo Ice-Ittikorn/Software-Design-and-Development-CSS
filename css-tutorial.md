@@ -1319,10 +1319,167 @@ blockquote {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheet/lab6-2.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>แดชบอร์ด</h1>
+            <nav>
+                <button class="Pro" >โปรไฟล์</button>
+                <button class="Pro" >ออกจากระบบ</button>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class=>หน้าแรก</li>
+                    <li class=>รายงาน</li>
+                    <li class=>การตั้งค่า</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>ยอดขายรวม</h3>
+                    <p style="text-align: center;">฿ 1,908,129 บาท</p>
+                </div>
+                <div class="stat-card">
+                    <h3>จำนวนออเดอร์</h3>
+                    <p style="text-align: center;"> 1,234 ออเดอร์</p>
+                </div>
+                <div class="stat-card">
+                    <h3>ลูกค้าใหม่</h3>
+                    <p style="text-align: center;"> 45 คน</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <h3>กราฟแสดงยอดขาย</h3>
+                    <div class="image" style="background-image: url('/images/proBuy.jpg')"></div>
+                    <!-- เพิ่มกราฟตามต้องการ -->
+                </div>
+                <div class="chart">
+                    <h3>สินค้าขายดี</h3>
+                    <div class="image" style="background-image: url('/images/pro2.jpeg')"></div>
+                    <!-- เพิ่มกราฟตามต้องการ -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    font-size: 1.5rem;
+    grid-area: header;
+    background: rgb(244, 207, 177);
+    color: rgb(120, 60, 40);
+    padding: 1rem;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    font-size: 30px;
+    background:rgb(202, 132, 98);
+    color: rgb(149, 70, 44);
+    padding: 1rem;
+}
+
+.Pro{
+    padding-top: 0;
+    width: calc(100px); /* ลดเอาไปแบ่งซ้ายขวา */
+    height: 30px;
+    font-size: 0.8rem;
+    background:rgb(202, 132, 98);
+    color: rgb(149, 70, 44);
+}
+
+.main-content {
+    grid-area: main;
+    padding: 1rem;
+    background: rgb(250, 220, 197);
+}
+.stats-grid {
+    display: grid;
+    font-size: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.stat-card {
+    background: rgb(244, 207, 177);
+    color: rgb(120, 60, 40);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.1);
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.chart {
+    background: rgb(244, 207, 177);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.1);
+    color: rgb(120, 60, 40);
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-areas: 
+            "header"
+            "main";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+
+    }
+    
+    .chart-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.image {
+    width: calc(100% - 40px); /* ลดเอาไปแบ่งซ้ายขวา */
+    height: 230px;
+    margin-left: 30px; 
+    margin-right: 20px; 
+    background-size: cover;
+    background-position: center;
+}
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="1080" alt="ภาพถ่ายหน้าจอ 2568-02-11 เวลา 01 25 09 (2)" src="https://github.com/user-attachments/assets/1d4caa9b-8a16-43ea-887e-9f426a29fd3b" />
+
 
